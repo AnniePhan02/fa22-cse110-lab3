@@ -79,15 +79,18 @@
     <p>Happy Skating!</p>
     <details>
       <summary>Ice Skating Memories</summary>
-      <img src="screenshots/iceskating.jpg" alt="Haircutter Layback Spin" width="350" height="250">
+        <p>To be added overtime...</p>
     </details>
+
+    <img src="screenshots/iceskating.jpg" alt="Haircutter Layback Spin" width="350" height="250">
+      <audio controls>
+        <source src="/screenshots/figureSkatingMusic.mp3" type="audio/mpeg">
+      </audio>
+      <video width ="350" height ="250" controls>
+        <source src="screenshots/CSE110Vid.mp4" type="video/mp4">
+      </video>
     
 
-    <p>Excited for the next skating competitions</p>
-
-    <p>Listen to the sound of ice</p>
-
-    <p>Excited for the next ice skating competitions</p>
 
 
     <hr>
@@ -96,19 +99,66 @@
 
     <h3>What is Your Favorite Skate Brand?</h3>
     <fieldset>
-      <legend>Pop Quiz:</legend>
+      <legend>Question #1:</legend>
         <form action="index.html" method="get">
-            <input type="radio" id="Jackson Ultima" name="fav_brand_1" value="Jackson Ultima">
-            <label for="Jackson Ultima">Jackson Ultima</label><br>
+            <input type="radio" id="Jackson_Ultima" name="fav_brand_1" value="Jackson Ultima">
+            <label for="Jackson_Ultima">Jackson Ultima</label><br>
             <input type="radio" id="Edea" name="fav_brand_2" value="Edea">
             <label for="Edea">Edea</label><br>
             <input type="radio" id="Riedell" name="fav_brand_3" value="Riedell">
             <label for="Riedell">Riedell</label>
             <br><br>
-            <input type="submit" value="Finish">
+            <input type="submit" value="Save">
           </form>
     </fieldset>
 
+    <fieldset>
+      <legend>Question #2:</legend>
+      <form action="index.html">
+        <p><label for="skateOpinion">Why do you like this skate brand?</label></p>
+        <textarea id="skateOpinion" name="skateOpinion" rows="5" cols="70"> Insert text here.</textarea>
+        <br>
+        <input type="submit" value="Save">
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question #3:</legend>
+      <form action="index.html">
+        <label for="favJump">What is your favorite jump?</label>
+        <input list="skatingJumps" name="favJump" id="favJump">
+          <datalist id="skatingJumps">
+              <option value="Waltz">
+              <option value="Salchow">
+              <option value="Toe Loop">
+              <option value="Loop">
+              <option value="Lutz">
+              <option value="Axel">
+          </datalist>
+          <input type="submit" value="Save">
+      </form>
+    </fieldset>
+
+
+    
+
+    <fieldset>
+      <legend>Question #4:</legend>
+      <form action="index.html">
+        <label for="favSpins">What is your favorite spin?</label>
+          <select name="favSpins" id="favSpins">
+            <option value="sit spin">sit spin</option>
+            <option value="layback">layback</option>
+            <option value="biellmann">biellmann</option>
+            <option value="haircutter">haircutter</option>
+          </select>
+          <input type="submit" value="Save">
+      </form>
+    </fieldset>
+    <fieldset>
+      <button type="button">Submit Quiz</button>
+    </fieldset>
+    
       
   </body>
 </html>
