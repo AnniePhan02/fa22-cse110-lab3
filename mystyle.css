@@ -1,0 +1,18 @@
+body {
+    background-color: #f9ecf3;
+}
+
+h3 {
+    color: #fc82c3;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div.forms {
+    text-align: center;
+}
+
+* {
+    font-family: 'Trebuchet MS';
+}
+
