@@ -21,7 +21,7 @@
     <h2> <span style="color:rgb(228, 75, 101)">Welcome to Today's Meeting</span></h2>
     <h3 style="color:deeppink">Brainstorming: how to become better at figure skating</h3>
    
-    <p style="color:hsl(352, 95%, 75%)">Figure skating is a sport where many can learn how to build their confidence,
+    <p class="description" style="color:hsl(352, 95%, 75%)">Figure skating is a sport where many can learn how to build their confidence,
         overcome mental obstacles, and relax. <br> It does take years of dedication and consistent practice. 
        <br>After all your hard work pays off, you are a true <i>figure skater.</i></p>
     
@@ -32,7 +32,7 @@
   
     <div class="Attendance">
       <h3>Attendance Sheet:</h3>
-      <ul>
+      <ul class="attendance-list">
           <li>Annie Phan</li>
           <li>Axel Liu</li>
           <li>Kate Ice</li>
@@ -63,7 +63,7 @@
     <hr>
 
     <div class="unfinished-thoughts">
-        <h3>Unifinished Ideas:</h3>
+        <h3>Unfinished Ideas:</h3>
         <p> From last week's meeting, we had a few items that we must discuss and figure out this week.</p>
         <ul>
            <li>Discuss: How much time should we dedicate to practice?</li>
@@ -86,17 +86,39 @@
     
     <p>A note for everyone who came today. <em>Thank you</em>, your time is <em>greatly appreciated.</em></p>
     
-    <p>Happy Skating!</p>
+    <div class="sticky">
+      <p>Happy Skating!</p>
+    </div>
+
     <details>
-      <summary>Ice Skating Memories</summary>
-        <p>To be added overtime...</p>
+      <summary>(Open for Flexbox of Skating Scores)</summary>
+        <div class="flexbox">
+            <div>100</div>
+            <div>200</div>
+            <div>150</div>
+        </div>
+    </details>
+
+    <details>
+      <summary>(Open for Grid)</summary>
+        <div class="grid">
+          <div class="grid-item">a</div>
+          <div class="grid-item">b</div>
+          <div class="grid-item">c</div>
+          <div class="grid-item">d</div>
+          <div class="grid-item">e</div>
+          <div class="grid-item">f</div>
+          <div class="grid-item">g</div>
+          <div class="grid-item">h</div>
+          <div class="grid-item">i</div>
+        </div>
     </details>
 
     <img src="screenshots/iceskating.jpg" alt="Haircutter Layback Spin" width="350" height="250">
-      <audio controls>
+      <audio controls class="aud">
         <source src="/screenshots/figureSkatingMusic.mp3" type="audio/mpeg">
       </audio>
-      <video width ="350" height ="250" controls>
+      <video class="vid" width ="350" height ="250" controls>
         <source src="screenshots/CSE110Vid.mp4" type="video/mp4">
       </video>
     
@@ -105,7 +127,7 @@
 
     <hr>
     <div class="forms">
-      <h3>Forms Section</h3>
+      <h3 >Forms Section</h3>
     </div>
 
 
