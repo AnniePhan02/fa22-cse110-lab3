@@ -1,5 +1,5 @@
 body {
-    background-color: #f9ecf3;
+    background-color: #f9ecf3; /* body color of entire page */
 }
 
 h3 {
@@ -20,6 +20,10 @@ h2 {
     margin-bottom: 20px;
     margin-right: 25px;
     margin-left: 20px;
+}
+
+h3, h2 {
+    background-color: #f9ecf3;
 }
 
 h1 {
@@ -99,6 +103,10 @@ div.attendance {
     position: static; /*always positioned according to normal page flow */
 }
 
+#ThankYou {
+    color:deeppink;
+}
+/* flex box styling */
 .flexbox {
     display:flex;
 
@@ -114,6 +122,7 @@ div.attendance {
     font-size: 20px;
 }
 
+/* grid styling */
 .grid {
     display: grid;
     grid-template-columns: 80px 100px 80px;
@@ -136,3 +145,43 @@ div.attendance {
     font-size: 30px;
     text-align: center;
   }
+
+
+/* this is for the hyperlink color */
+a:link {
+    color: rgb(255, 95, 156);
+}
+
+a:visited{
+    color:#fc82c3;
+}
+
+a:hover{
+    color:fuchsia
+}
+
+a:active {
+    color: white
+}
+
+@media screen and (min-width: 500px){
+    body{
+        background-color: #fff7fb;
+    }
+}
+
+li[target="name"], h3[target="Comments"] {
+    background-color: #f9ecf3;
+}
+
+p i {  /*descendant selector */
+    background-color: #972357;
+}
+
+h3 + p { /* adjacent sibling operator */
+    background-color: #ebbbd1;
+}
+
+fieldset ~ legend { /*general sibling combinator */
+    color:#fc82c3;
+}
