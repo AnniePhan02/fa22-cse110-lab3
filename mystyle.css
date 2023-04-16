@@ -6,13 +6,133 @@ h3 {
     color: #fc82c3;
     text-decoration: underline;
     text-align: center;
+    font-size: 25px; /* absolute units */
+
+    margin: auto;
+
+}
+
+h2 {
+    font-size: 8mm;/* absolute units */
+
+    /* margin long hand */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 1cm; /* absolute units */
+    line-height: 0.5rem; /* relative units */
+
+    margin: 25px 30px 20px 40px;/* short margin */
+
+    height: 30px;
+    width: 500px;
+    max-width: 600px;
+    min-width: 100px;
+
+    position: sticky;
+}
+
+p {
+    line-height: 1.5em; /* relative units */
+    font-size: 2ch; /* relative units */
+
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 40px;
+
+}
+
+ul.attendance-list {
+
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+
+    border-style: solid;
+    border-color:#fc82c3;
+    border-width: 2px;
+    border-radius: 20px;
 }
 
 div.forms {
     text-align: center;
 }
 
+p.description {
+
+    padding: 20px 40px 25px 40px;
+
+    border-style: solid;
+    border-color:#fc82c3;
+    border-width: 2px;
+    border-radius: 20px;
+
+}
+
 * {
     font-family: 'Trebuchet MS';
 }
 
+video.vid {
+    display: inline-block;
+}
+
+audio.aud {
+    display: block;
+}
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    background-color: #fad8e7;
+    border: 2px solid #ffb6db;
+}
+
+div.attendance {
+    position: static; /*always positioned according to normal page flow */
+}
+
+.flexbox {
+    display:flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.flexbox  > div {
+    background-color: #ffd8ea;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 100px 80px;
+    grid-template-rows: 100px 80px 100px;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+    row-gap: 10px;
+    column-gap: 10px;
+
+    background-color: #ffcee1;
+    padding: 10px;
+  }
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
